@@ -1,13 +1,13 @@
-`include "and_n2t.sv"
+`include "and_nt.v"
 
-module and_n2t_tb();
+module and_nt_tb();
     reg  a;
     reg  b;
     reg  expected;
 
     wire out;
 
-    and_n2t tested_intance(a, b, out);
+    and_nt tested_intance(a, b, out);
 
     task assert_else_error;
         assert (expected == out) else $error("a was %d, b was %d, out was %d, expected %d\n", a , b, out, expected);
