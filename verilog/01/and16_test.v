@@ -1,4 +1,4 @@
-`include "and_16.sv"
+`include "and_16.v"
 
 module and_16_tb();
     reg [15:0]  a = 16'b0000000000000000;
