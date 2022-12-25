@@ -1,5 +1,5 @@
 `ifndef half_adder
-  `include "half_adder.sv"
+  `include "half_adder.v"
 `endif
 `define inc_16 1
 
