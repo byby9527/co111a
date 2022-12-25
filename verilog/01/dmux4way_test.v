@@ -1,6 +1,6 @@
-`include "dmux_4_way.sv"
+`include "dmux4way.v"
 
-module dmux_4_way_tb();
+module dmux4way_test();
     reg       in = 1;
     reg [1:0] select;
 
@@ -9,7 +9,7 @@ module dmux_4_way_tb();
     wire      c;
     wire      d;
 
-    dmux_4_way u1(in, select, a, b, c, d);
+    dmux4way u1(in, select, a, b, c, d);
 
     task assert_else_error(input a_exp, input b_exp, input c_exp, input d_exp);
         assert (a == a_exp &&
