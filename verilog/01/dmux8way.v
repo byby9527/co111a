@@ -1,9 +1,9 @@
-`ifndef dmux_4_way
-  `include "dmux_4_way.sv"
+`ifndef dmux4way
+  `include "dmux4way.v"
 `endif
-`define dmux_8_way 1
+`define dmux8way 1
 
-module dmux_8_way(
+module dmux8way(
     input       in,
     input [2:0] select,
     output      a,
