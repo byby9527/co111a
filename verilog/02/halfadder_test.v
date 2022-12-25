@@ -1,6 +1,6 @@
-`include "half_adder.sv"
+`include "half_adder.v"
 
-module half_adder_tb();
+module halfadder_test();
     reg  a, b;
     wire carry, sum;
 
