@@ -1,5 +1,5 @@
-`ifndef and_n2t
-  `include "and_n2t.sv"
+`ifndef and_nt
+  `include "and_nt.sv"
 `endif
 `define and_16 1
 
