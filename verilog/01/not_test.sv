@@ -1,6 +1,6 @@
-`include "not_n2t.sv"
+`include "not_nt.v"
 
-module not_n2t_tb();
+module not_test();
     reg in;
     wire out;
     reg exp_out;
