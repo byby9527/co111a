@@ -1,5 +1,5 @@
-`ifndef xor_n2t
-  `include "../01/xor_n2t.sv"
+`ifndef xor_nt
+  `include "../01/xor_nt.v"
 `endif
 `define half_adder 1
 
