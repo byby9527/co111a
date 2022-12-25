@@ -1,11 +1,11 @@
-`include "xor_n2t.sv"
+`include "xor_nt.v"
 
-module xor_n2t_tb();
+module xor_test();
     reg  a;
     reg  b;
     reg  expected;
 
-    xor_n2t xor_n2t(a, b, out);
+    xor_nt xor_nt(a, b, out);
 
     task assert_else_error;
         assert (a ^ b == out) else $error("xor a: %b,  b: %b, out: %b,  expected: %b", a, b, out, a ^ b);
