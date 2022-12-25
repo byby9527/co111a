@@ -1,17 +1,17 @@
-`ifndef or_8_way
-  `include "../01/or_8_way.sv"
+`ifndef or8way
+  `include "../01/or8way.v"
 `endif
 `ifndef mux_16
-  `include "../01/mux_16.sv"
+  `include "../01/mux_16.v"
 `endif
 `ifndef add_16
-  `include "add_16.sv"
+  `include "add_16.v"
 `endif
 `ifndef and_16
-  `include "and_16.sv"
+  `include "and_16.v"
 `endif
 `ifndef not_16
-  `include "not_16.sv"
+  `include "not_16.v"
 `endif
 `define alu 1
 
