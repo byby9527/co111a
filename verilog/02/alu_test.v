@@ -1,6 +1,6 @@
 `include "alu.sv"
 
-module alu_tb();
+module alu_test();
     reg         zx, zy, nx, ny, f, no;
     reg [15:0]  x;
     reg [15:0]  y;
