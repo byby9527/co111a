@@ -1,6 +1,6 @@
-`include "dmux_8_way.sv"
+`include "dmux8way.v"
 
-module dmux_8_way_tb();
+module dmux8way_test();
     reg       in;
     reg [2:0] select;
 
@@ -13,7 +13,7 @@ module dmux_8_way_tb();
     wire      g;
     wire      h;
 
-    dmux_8_way u1(in, select, a, b, c, d, e, f, g, h);
+    dmux8way u1(in, select, a, b, c, d, e, f, g, h);
 
     task assert_else_error(
         input a_exp, input b_exp, input c_exp, input d_exp, input e_exp, input f_exp, input g_exp, input h_exp
@@ -27,7 +27,7 @@ module dmux_8_way_tb();
             g == g_exp &&
             h == h_exp)
         else begin
-            $error("dmux_4_way in: %b, select: %b, outputs (%b %b %b %b %b %b %b %b) expected (%b %b %b %b %b %b %b %b)",
+            $error("dmux4way in: %b, select: %b, outputs (%b %b %b %b %b %b %b %b) expected (%b %b %b %b %b %b %b %b)",
                 in, select, a, b, c, d, e, f, g, h, a_exp, b_exp, c_exp, d_exp, e_exp, f_exp, g_exp, h_exp);
 
         end
