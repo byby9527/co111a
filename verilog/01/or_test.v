@@ -1,11 +1,11 @@
-`include "or_n2t.sv"
+`include "or_nt.v"
 
-module or_n2t_tb();
+module or_test();
     reg  a;
     reg  b;
     reg  expected;
 
-    or_n2t or_n2t(a, b, out);
+    or_nt or_nt(a, b, out);
 
     task assert_else_error;
         assert (a | b == out) else $error("xor a: %b,  b: %b, out: %b,  expected: %b", a, b, out, a | b);
