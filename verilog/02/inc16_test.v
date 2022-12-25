@@ -1,6 +1,6 @@
-`include "inc_16.sv"
+`include "inc_16.v"
 
-module inc_16_tb();
+module inc16_test();
     reg [15:0]  in;
     wire [15:0] out;
 
