@@ -1,6 +1,6 @@
 `include "../02/alu_optimized.sv"
 
-module cpu_jopdorp_optimized(
+module cpu_optimized(
     input  [15:0] inM,
     input  [15:0] instruction,
     input         reset,
