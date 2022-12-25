@@ -1,6 +1,6 @@
-`include "mux_8_way_16.sv"
+`include "mux8way16.v"
 
-module mux_8_way_16_tb();
+module mux8way16_test();
     reg [15:0]  a = 16'b0101010101010101;
     reg [15:0]  b = 16'b1010101010101010;
     reg [15:0]  c = 16'b0000000011111111;
@@ -14,7 +14,7 @@ module mux_8_way_16_tb();
 
     wire [15:0] out;
 
-    mux_8_way_16 u1(a, b, c, d, e, f, g, h, select, out);
+    mux8way16 u1(a, b, c, d, e, f, g, h, select, out);
     task assert_else_error(input [15:0] expected);
         assert (out == expected) else begin
             $error("mux_8_way_16 select: %b, out: %b, expected: %b, a: %b, b: %b, c: %b, d: %b, e: %b, f: %b, g: %b, h: %b"
