@@ -1,6 +1,6 @@
-`include "dmux.sv"
+`include "dmux.v"
 
-module dmux_tb();
+module dmux_test();
     reg  in = 0;
     reg  select = 0;
 
