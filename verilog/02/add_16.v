@@ -1,5 +1,5 @@
 `ifndef full_adder
-   `include "full_adder.sv"
+   `include "full_adder.v"
 `endif
 `define add_16 1
 
