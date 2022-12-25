@@ -1,6 +1,6 @@
-`include "mux_16.sv"
+`include "mux_16.v"
 
-module mux_16_tb();
+module mux16_test();
     reg [15:0]  a;
     reg [15:0]  b;
     reg         select;
