@@ -17,7 +17,7 @@ module mux8way16_test();
     mux8way16 u1(a, b, c, d, e, f, g, h, select, out);
     task assert_else_error(input [15:0] expected);
         assert (out == expected) else begin
-            $error("mux_8_way_16 select: %b, out: %b, expected: %b, a: %b, b: %b, c: %b, d: %b, e: %b, f: %b, g: %b, h: %b"
+            $error("mux8way16 select: %b, out: %b, expected: %b, a: %b, b: %b, c: %b, d: %b, e: %b, f: %b, g: %b, h: %b"
                 ,select, out, expected, a, b, c, d, e, f, g, h);
         end
     endtask
