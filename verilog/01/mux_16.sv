@@ -1,5 +1,5 @@
 `ifndef mux
-  `include "mux.sv"
+  `include "mux.v"
 `endif
 `define mux_16 1
 
