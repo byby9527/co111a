@@ -1,5 +1,5 @@
-`ifndef or_n2t
-  `include "or_n2t.sv"
+`ifndef or_nt
+  `include "or_nt.v"
 `endif
 `define or_16 1
 
