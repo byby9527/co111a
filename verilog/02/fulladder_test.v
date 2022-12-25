@@ -1,6 +1,6 @@
-`include "full_adder.sv"
+`include "full_adder.v"
 
-module full_adder_tb();
+module fulladder_test();
     reg  a, b, c;
     wire carry, sum;
 
