@@ -1,5 +1,5 @@
-`ifndef not_n2t
-   `include "not_n2t.sv"
+`ifndef not_nt
+   `include "not_nt.v"
 `endif
 `define not_16 1
 
