@@ -1,6 +1,6 @@
-`include "or_16.sv"
+`include "or_16.v"
 
-module or_16_tb();
+module or16_test();
     reg [15:0]  a;
     reg [15:0]  b;
     reg [15:0]  expected;
