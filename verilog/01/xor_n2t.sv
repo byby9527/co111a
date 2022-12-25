@@ -1,9 +1,9 @@
-`ifndef and_n2t
-  `include "and_n2t.sv"
+`ifndef and_nt
+  `include "and_nt.v"
 `endif
-`define xor_n2t 1
+`define xor_nt 1
 
-module xor_n2t(input a, input b, output out);
+module xor_nt(input a, input b, output out);
 
     // Put your code here
 
