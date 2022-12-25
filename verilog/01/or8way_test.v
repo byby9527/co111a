@@ -1,6 +1,6 @@
-`include "or_8_way.sv"
+`include "or8way.v"
 
-module or_8_way_tb();
+module or8way_test();
     reg [7:0] in;
     wire      out;
     reg       expected;
