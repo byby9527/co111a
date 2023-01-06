@@ -13,56 +13,38 @@
 
 // Put your code here.
 
-(LOOP)
-    @KBD
-    D = M
-    @BLACK 
-    D; JNE
-    @WHITE 
-    D; JEQ 
-    @LOOP 
-    0; JMP 
-(BLACK)
-    @SCREEN 
-    D = A
-    @i 
-    M = D   
-    (BLACKLOOP)
-        @i 
-        D = M 
-        @KBD 
-        D = D - A 
-        @LOOP   
-        D; JEQ
-        D = -1 
-        @i 
-        A = M     
-        M = D 
-        D = 1 
-        @i 
-        D = D + M 
-        M = D   
-        @BLACKLOOP 
-        0; JMP 
-(WHITE) 
-    @SCREEN 
-    D = A 
-    @i 
-    M = D 
-    (WHITELOOP)
-        @i 
-        D = M 
-        @KBD 
-        D = D - A 
-        @LOOP 
-        D; JEQ 
-        D = 0 
-        @i 
-        A = M 
-        M = D 
-        D = 1  
-        @i 
-        D = D + M 
-        M = D 
-        @WHITELOOP
-        0; JMP  
+(BLACKLOOP) 	   
+@24576		        
+D=M		           
+@WHITELOOP	     
+D;JEQ		         
+@24575		       
+D=M		           
+@WHITELOOP	     
+D;JLT		         
+@i		          
+D=M		         
+@16384		      
+D=A+D		       
+A=D		         
+M=-1		        
+@i		        
+M=M+1		      
+@BLACKLOOP	   
+0;JMP		       
+
+(WHITELOOP)	    
+@24576		      
+D=M		           
+@BLACKLOOP	     
+D;JGT		      
+@i		        
+D=M		        
+@16384		  
+D=A+D		     
+A=D		     
+M=0		       
+@i		    
+M=M-1		   
+@WHITELOOP	
+0;JMP		    
